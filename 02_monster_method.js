@@ -15,8 +15,47 @@
     ///////////////////////////
     // Put your code here!
     ///////////////////////////
+    function LivingThing(monsterName, monsterHealth) {
+      //private to class(instatiated object)
+     this.name = monsterName;
+     this.health = monsterHealth;
 
-    
+    //let name = monsterName;
+     //let health = monsterHealth;
+
+  /* Copy your code from the previous exercise, then add a public method "isAlive" to the object.
+     * The method should return a boolean value of true if the value of the "health" property is
+     * greater than zero, otherwise it should return false. */
+
+     this.isAlive = function(){
+
+       if(this.health >0){
+         return true;
+       } else
+       {
+       return false;
+     }
+}
+
+
+
+     }
+
+
+
+
+
+
+
+
+    let rat = new LivingThing("Rat", 5);
+
+    let goblin = new LivingThing("Goblin", 30);
+
+    let ogre = new LivingThing("Ogre", 80);
+
+    let monsters = [rat, goblin, ogre]
+
     //The code below should work when you are done
     console.log("Are the monsters alive?");
 
@@ -40,7 +79,3 @@
     }
 
 })();
-    
-
-
-    

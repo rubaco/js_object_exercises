@@ -20,7 +20,7 @@
  * Finally, add each of your objects to an array called "monsters"
  *
  * Use the following function documentation if you need a refresher on how objects with constructors are defined:
- * @see https://css-tricks.com/understanding-javascript-constructors/#article-header-id-1
+ * @see
  *
  *
  */
@@ -33,8 +33,52 @@
     ///////////////////////////
     // Put your code here!
     ///////////////////////////
+    //Define a an object below with the name "LivingThing".
+    //Give the object a constructor that takes two properties called "name" and "health".
+    function LivingThing(monsterName, monsterHealth) {
+      //private to class(instatiated object)
+     this.name = monsterName;
+     this.health = monsterHealth;
 
-    
+    //let name = monsterName;
+     //let health = monsterHealth;
+
+
+
+    }
+
+
+
+      /* Once you have your object defined, let's create some living things.
+      * Create three LivingThing instances from your object, one for each of the creatures below.
+      * Be sure to set each object's name and health!
+      *
+      * name: "Rat"
+      * health: 5
+      *
+      * name: "Goblin"
+      * health: 30
+      *
+      * name: "Ogre"
+      * health: 80
+      */
+      let rat = new LivingThing("Rat", 5);
+
+      let goblin = new LivingThing("Goblin", 30);
+
+      let ogre = new LivingThing("Ogre", 80);
+
+      let monsters = [rat, goblin, ogre]
+
+      console.log(monsters);
+
+
+
+
+
+
+
+
     //The code below should work when you are done
     console.log("Monsters!");
 
@@ -58,7 +102,3 @@
     }
 
 })();
-    
-
-
-    
